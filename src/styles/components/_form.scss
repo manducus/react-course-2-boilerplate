@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > * { // 全ての direct children に追加で適用
+    margin-bottom: $m-size;
+  }
+}
+
+.form__error {
+  margin: 0 0 $m-size 0;
+  font-style: italic;
+}

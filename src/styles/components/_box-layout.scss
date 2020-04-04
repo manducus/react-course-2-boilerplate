@@ -1,0 +1,23 @@
+.box-layout {
+  align-items: center;
+  background: url("/images/bg.jpg");
+  background-size: cover; // makes sure to always cover the container with the image
+  display: flex;
+  height: 100vh; // set it 100% of the viewport height
+  justify-content: center;
+  width: 100vw;
+}
+
+.box-layout__box {
+  background: fade-out($color: white, $amount: .15);
+  border-radius: 3px; // 角を丸くする
+  padding: $l-size $m-size; // 上下 左右
+  text-align: center;
+  width: 25rem;
+}
+
+// line-height makes sure there's a space between lines when you have text across multi lines
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1; // line-height を縮めることで上下のスペースを広くする
+}

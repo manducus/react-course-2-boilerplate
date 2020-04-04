@@ -1,0 +1,33 @@
+// define some big picture stuff
+
+* {
+    box-sizing: border-box;
+}
+
+// set font-size equal to 62.5% of its current size
+// if base=16pixel -> font-size: 62.5% によって base=1rem=10pixel
+html {
+    font-size: 62.5%;
+}
+
+// 1.6rem とはすなわち base の 1.6倍のサイズになるってこと
+// font-family: the most ideal one, next ideal one,..., very basic fallback
+// 1 rem = 16 pixels
+body {
+    color: $dark-grey;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+}
